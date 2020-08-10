@@ -1,0 +1,197 @@
+<!--================Header Menu Area =================-->
+{% extends 'introduction/base.html' %}
+<!--================End Header Menu Area =================-->
+<!--================Load Static Files =================-->
+{% load static %}
+<!--================Title For The Page =================-->
+{% block title %} Home {% endblock %}
+<!--================End Title For The Page =================-->
+
+{% block body %}
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- 1 Row - Image Carousel -->
+    <div class="row">
+        <!-- Column -->
+        <div class="col-lg-12 col-xlg-12 col-md-12 intro-page-titles">
+            <div class="intro-card">
+                    <!-- CAROUSEL -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="intro-carousel-image-container">
+                                    <div class="intro-carousel-image">
+                                        <h1>Collaborative Finance In a Smart Calendar</h1>
+                                        <p class="text-muted">Calender Based Personal Finance</p>
+                                        <button type="submit" class="btn btn-info waves-effect">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="intro-carousel-image-container">
+                                    <div class="intro-carousel-image">
+                                        <h1>Ruswift: Financial Manager</h1>
+                                        <p class="text-muted">Get Your Free Account Now!!</p>
+                                        <button type="submit" class="btn btn-info waves-effect">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="intro-carousel-image-container">
+                                    <div class="intro-carousel-image">
+                                        <h1>Cash Flow Analysis</h1>
+                                        <p class="text-muted">Buy Cheaper But Better</p>
+                                        <button type="submit" class="btn btn-info waves-effect">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                    </div>
+                    <!-- End CAROUSEL -->
+            </div>
+        </div>
+    </div>
+    <!-- End 1 Row -->
+    <!-- 2 Row - Feature Short Description -->
+    <div class="row col-lg-offset-1 col-md-offset-1">
+        <!-- Column - Expense Manager -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card p-30">
+                <div class="card-body">
+                    <!-- Row -->
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col p-r-0 text-center">
+                            <img src="{% static 'introduction/images/icon/f-icon-1.png' %}" alt="Expense Manager" class="home-card-body-image">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <h4 class="text-muted">Expense Manager</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="text-justify">
+                            Manage your financial Activities from a simple and interactive layout. See your predicted saving amount and act in order to increase them with our suggestions.
+                        </p>
+                    </div>
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-info waves-effect">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Column - Shopping List -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card p-30">
+                <div class="card-body">
+                    <!-- Row -->
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col p-r-0 text-center">
+                            <img src="{% static 'introduction/images/icon/f-icon-3.png' %}" alt="Shopping list" class="home-card-body-image">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <h4 class="text-muted">Shopping List</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="text-justify">
+                            Now it is easier to control your financial resources with Finance's newest feature, which allows you to control your daily Shopping Lists and dreams.
+                        </p>
+                    </div>
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-info waves-effect">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Column - Calendar -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card p-30">
+                <div class="card-body">
+                    <!-- Row -->
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col p-r-0 text-center">
+                            <img src="{% static 'introduction/images/icon/f-icon-2.png' %}" alt="Calendar" class="home-card-body-image">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <h4 class="text-muted">Calendar</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="text-justify">
+                            Add past, future or recurring transactions and categorize them with a bit of AI help. Track them on mobile and plan ahead on the web, or just mix things up.
+                        </p>
+                    </div>
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-info waves-effect">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End 2 Row -->
+    <!-- 3 Row - Brief Explanation -->
+    <div class="row">
+        <!-- Column - Expense Prediction -->
+        <div class="col-lg-4 col-xlg-3 col-md-4">
+            <div class="card blog-widget">
+                <div class="card-body">
+                    <div class="blog-image"><img src="{% static 'introduction/images/big/img1.jpg' %}" alt="img" class="img-responsive" /></div>
+                    <h3>Expenditure Prediction, new rules for shopping</h3>
+                    <label class="label label-rounded label-success">Technology</label>
+                    <p class="m-t-20 m-b-20">
+                        Manage your Shopping List and add to Wish List. See Expected Expenditure and manage Transactions accordingly.
+                    </p>
+                    <div class="d-flex">
+                        <div class="read"><a href="javascript:void(0)" class="link font-medium">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Column - Finance Breakpoints -->
+        <div class="col-lg-8 col-xlg-9 col-md-8">
+            <div class="card blog-widget">
+                <div class="card-body">
+                    <div class="blog-image">
+                        <div class="row">
+                            <div class="col"><img src="{% static 'introduction/images/portfolio/ms-p-3.jpg' %}" alt="img" class="img-responsive"/></div>
+                            <div class="col"><img src="{% static 'introduction/images/portfolio/ms-p-8.jpg' %}" alt="img" class="img-responsive"/></div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div>
+                            <h3 class="card-title">Let Us Help You Build Your Finance Strong</h3>
+                            <h6 class="card-subtitle">Overview of Cash Inflow / Outflow</h6>
+                        </div>
+                    </div>
+                    <p class="m-t-20 m-b-20">
+                        Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra.
+                    </p>
+                    <ul>
+                        <li><a href="#">Nunc nec maximus dui, </a></li>
+                        <li><a href="#">Aenean pellentesque elit vitae</a></li>
+                        <li><a href="#">Aenean pellentesque elit vitae</a></li>
+                        <li><a href="#">Ex mauris, ornare eget pretium </a></li>
+                        <li><a href="#">Cras ex mauris, ornare eget preti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End 3 Row -->
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+
+{% endblock %}
+

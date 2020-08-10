@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="20x50" href="{% static 'introduction/images/fav-ethereum.png' %}">
+    <title>Ruswift - {% block title %}Financial Manager{% endblock %}</title>
+    <!-- Bootstrap Core CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{% static 'introduction/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{% static 'introduction/css/style.css' %}" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="{% static 'introduction/css/colors/green-dark.css' %}" id="theme" rel="stylesheet">
+
+    {% block extra_plugins %} {% endblock %}
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <!-- Logo icon -->
+                        <table style="display: inline-block; vertical-align: middle;">
+                            <tr>
+                                <td><img src="{% static 'introduction/images/fav-ethereum.png' %}" id="logo" alt="homepage" class="light-logo" style="width: 34px; height: 33px; padding-right: 10px;" /></td>
+                                <td class="light-logo" id="title" style="display: table-cell"><span>Ruswift</span></td>
+                            </tr>
+                        </table>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Menu Bar -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0"></ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Right Menu -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="#">Sign-Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="#">Help</a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Right Menu -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Menu Bar -->
+                <!-- ============================================================== -->
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+
+{% block body %}
+
+{% endblock %}
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+        <footer>
+			<div class="footer-container">
+				<div class="footer-box">
+					<div class="footer-icon"><i class="fa fa-map-marker"></i>Our Location</div>
+					<div class="footer-details">India</div>
+				</div>
+				<div class="footer-box">
+					<div class="footer-icon"><i class="fa fa-phone"></i>Call Us</div>
+					<div class="footer-details">+91 987 654 2589</div>
+				</div>
+				<div class="footer-box">
+					<div class="footer-icon"><i class="fa fa-envelope"></i>Write Us</div>
+					<div class="footer-details">Info@ruswift.com</div>
+				</div>
+			</div>
+            <div class="footer_copyright">
+                <div class="container">
+                    <div class="float-sm-left">
+                        <h5>
+                        	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+						</h5>
+                    </div>
+                    <div class="float-sm-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="{% static 'introduction/plugins/jquery/jquery.min.js' %}"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="{% static 'introduction/plugins/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'introduction/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--Wave Effects -->
+    <script src="{% static 'introduction/js/waves.js' %}"></script>
+    <!--Custom JavaScript -->
+    <script src="{% static 'introduction/js/custom.min.js' %}"></script>
+{% block script %}
+{% endblock %}
+</body>
+</html>
